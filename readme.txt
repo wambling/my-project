@@ -46,4 +46,13 @@ Issue still appears even if I place context.xml inside my META-INF folder.
 <ResourceLink name="jdbc/MySqlDS"
                 global="jdbc/MySqlDS"
                 auth="Container"
-                type="javax.sql.DataSource" />			  
+                type="javax.sql.DataSource" />	
+==================================================
+
+Refer to Project=> DummyProject_NotWorking for issue with Fork Join Framework in Tomcat. Logs are present under folder logs/daily
+
+Refer to Project=> DummyProject when Tomcat throws no exception if I use Thread class. Logs are present under folder logs/daily
+
+War files are also present inside each folder to deploy on Tomcat and test.
+
+Servlet is mapped to URL: "/runDummy"			
