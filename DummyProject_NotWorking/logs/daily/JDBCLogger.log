@@ -1,0 +1,244 @@
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_10=> Getting connection.
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_1=> Getting connection.
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_2=> Getting connection.
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_1
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_2
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_10
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_10:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.execLocalTasks(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 11 more
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_9=> Getting connection.
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_2:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 10 more
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_1:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 10 more
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_9
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_4=> Getting connection.
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_4
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_9:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.execLocalTasks(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 11 more
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_4:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 10 more
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_3=> Getting connection.
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_5=> Getting connection.
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_8=> Getting connection.
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_3
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_8
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_3:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 10 more
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_6=> Getting connection.
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_5
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_8:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.execLocalTasks(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 11 more
+[INFO ] 16-03-2018 16:34:13 TestClass - Task_No_7=> Getting connection.
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_6
+[ERROR] 16-03-2018 16:34:13 TestClass - Exception occured for=> Task_No_7
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_5:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 10 more
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_7:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.execLocalTasks(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 11 more
+[ERROR] 16-03-2018 16:34:13 TestClass - Task_No_6:: Error Message=> Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
+Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_161]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	at com.sun.naming.internal.VersionHelper12.loadClass(Unknown Source) ~[?:1.8.0_161]
+	... 10 more

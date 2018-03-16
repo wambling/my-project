@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<Configuration status="ERROR" monitorInterval="30">
+	<Properties>
+		<Property name="log-path">/DummyProject/logs</Property>
+	</Properties>
+	<Appenders>
+
+		<!-- console appender -->
+		<Console name="console-log" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="[%-5level] %d{dd-MM-yyyy HH:mm:ss} [%t] %c{1} - %msg%n" />
+		</Console>
+
+		<!-- file appender  -->
+		<!-- immediateFlush="false" for Asynchronous Logging -->
+		<RollingRandomAccessFile name="JDBCLogger"  
+			fileName="${log-path}/daily/JDBCLogger.log"
+			filePattern="${log-path}/archive/Transformation-%d{dd-MM-yyyy-HH-mm-ss}-%i.log.gz">
+			<!-- log pattern -->
+			<PatternLayout>
+				<pattern>[%-5level] %d{dd-MM-yyyy HH:mm:ss} %c{1} - %msg%n</pattern>
+			</PatternLayout>
+			<!-- set file size policy -->
+			<Policies>
+				<!-- TimeBasedTriggeringPolicy interval="1" modulate="true"/ -->
+				<SizeBasedTriggeringPolicy size="1 MB" />
+				<OnStartupTriggeringPolicy />
+			</Policies>
+			<DefaultRolloverStrategy max="30" />
+		</RollingRandomAccessFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.dummy.test.TestClass"
+			level="all" additivity="false">
+			<appender-ref ref="JDBCLogger" />
+		</Logger>
+		<Root level="error" additivity="false">
+			<AppenderRef ref="console-log" />
+		</Root>
+	</Loggers>
+</Configuration>
