@@ -2,10 +2,22 @@ Issue Description
 ================================================
 I am running 10 tasks using Java's Fork Join Framework. Each task opens and closes it's own connection using Tomcat's datasource. 
 
-When deploying the code in Tomcat 8.5 and even 9.0.6 it throws error::
+When deploying the code in Tomcat 8.5 and even 9.0.6 it throws error at below line of code:
+
+initialContext	= new InitialContext();//Error
 
 javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
-
+	at javax.naming.spi.NamingManager.getInitialContext(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.getDefaultInitCtx(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.init(Unknown Source) ~[?:1.8.0_161]
+	at javax.naming.InitialContext.<init>(Unknown Source) ~[?:1.8.0_161]
+	at com.dummy.test.TestClass.compute(TestClass.java:71) [classes/:?]
+	at java.util.concurrent.RecursiveAction.exec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.execLocalTasks(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) [?:1.8.0_161]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) [?:1.8.0_161]
 Caused by: java.lang.ClassNotFoundException: org.apache.naming.java.javaURLContextFactory
 
 But when I run the same tasks by creating 10 Threads and running them, then Tomcat throws no error.
