@@ -1,6 +1,8 @@
 Issue Description
 ================================================
-I am running 10 tasks using Java's Fork Join Framework. Each task opens and closes it's own connection using Tomcat's datasource. When deploying the code in Tomcat 8.5 and even 9.0.6 it throws error::
+I am running 10 tasks using Java's Fork Join Framework. Each task opens and closes it's own connection using Tomcat's datasource. 
+
+When deploying the code in Tomcat 8.5 and even 9.0.6 it throws error::
 
 javax.naming.NoInitialContextException: Cannot instantiate class: org.apache.naming.java.javaURLContextFactory
 
