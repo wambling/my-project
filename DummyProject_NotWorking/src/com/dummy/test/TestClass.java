@@ -91,7 +91,7 @@ extends
 				e.printStackTrace();
 			}
 		}
-		System.out.println(threadName + "=> Exiting.");
+		Logger.info(threadName + "=> Exiting.");
 		
 	}
 }
